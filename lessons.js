@@ -629,7 +629,7 @@ switch (arg) {
 
 // Функции являются основными строительными блоками программы. Если надо повторить один и тот же код в разных местах программы, используются функции.
 // Встроенные функции - alert(); prompt(); confirm();
-// Синтаксис:
+// Синтаксис FUNCTION DECLARATION:
 
 function nameOfFunction (paramets) {
     bodyOfFunction;
@@ -724,3 +724,28 @@ function example(a, b, c, o, i) {
     )
 }
 
+// FUNCTION EXPRESSION:
+
+let sayHi = function () {
+    console.log('Hi!')
+}
+
+// Стрелочные функции ARROW FUNCTIONS:
+
+let func = (arg1, arg2, arg3) => expression;
+
+// • Если один аргумент, круглые скобки можно опустить
+
+let double = n => n * 2;
+
+// • Если аргументов нет, круглые скобки должны быть пустыми
+
+let functio = () => console.log('Hello!');
+
+// В многострочных стрелочных функциях выражения и инструкции нужно помечать в фигурные скобки и обязательно помечать
+// возврат значения - RETURN
+
+let summ = (a, b) => {
+    let result = a + b;
+    return result;
+}
